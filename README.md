@@ -1,55 +1,56 @@
 # sharpgl
 Libreria OpenGL Para Desarrollo de Juegos Escrita En C#
 
+# Ejemplo En Codigo
 
-  using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Windows.Forms;
 
-using SharpGL;
-using SharpGL.Desktop;
-using SharpGL.Graphics;
-using SharpGL.Shapes
+    using SharpGL;
+    using SharpGL.Desktop;
+    using SharpGL.Graphics;
+    using SharpGL.Shapes
 
-namespace PixeliumTest
-{
-    class EntryPoint
+    namespace PixeliumTest
     {
-        [STAThread]
-
-        static void Main()
+        class EntryPoint
         {
-            using (Game game = new Game())
+            [STAThread]
+
+            static void Main()
             {
-                game.Run();
+                using (Game game = new Game())
+                {
+                    game.Run();
+                }
+            }
+
+        }
+
+        public class Game : RenderWindow
+        {
+            public override void OnLoad()
+            {
+                //TODO LOAD CODE
+            }
+            public override void OnUpdate(RenderLoop loop)
+            {
+            //TODO UPDATE CODE
+            }
+            public override void OnRender()
+            {
+                //TODO RENDER CODE
+            }
+
+            public override void OnResize(int w, int h)
+            {
+                GL.Viewport(0, 0, w, h);
             }
         }
-     
+
     }
-
-    public class Game : RenderWindow
-    {
-        public override void OnLoad()
-        {
-            //TODO LOAD CODE
-        }
-        public override void OnUpdate(RenderLoop loop)
-        {
-        //TODO UPDATE CODE
-        }
-        public override void OnRender()
-        {
-            //TODO RENDER CODE
-        }
-
-        public override void OnResize(int w, int h)
-        {
-            GL.Viewport(0, 0, w, h);
-        }
-    }
-
-}
