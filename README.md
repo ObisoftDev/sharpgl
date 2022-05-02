@@ -54,3 +54,10 @@ Libreria OpenGL Para Desarrollo de Juegos Escrita En C#
         }
 
     }
+    
+# Redes Sociales
+Usuario En Telegram : https://t.me/obisoftdevel
+
+Canal En Telegram : https://t.me/obisoft_dev
+
+Youtube : https://m.youtube.com/channel/UCB1gH3rhENpWnsnxkA5Fl1Q/videos
